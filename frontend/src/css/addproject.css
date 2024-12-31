@@ -1,0 +1,123 @@
+/* index.css */
+.coca {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #17a2b8, #6f42c1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .addproject {
+    background-color: #ecf0f1;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .addproject h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+  
+  .addproject form {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .addproject form input,
+  form textarea {
+    align-items: center;
+    padding: 12px;
+    width: 700px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #333;
+    transition: all 0.3s;
+  }
+  
+  .addproject form input:focus,
+  form textarea:focus {
+    background: #e9ecef;
+    box-shadow: 0 0 5px #ffc107;
+  }
+  
+  .addproject form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .addproject form button {
+    padding: 12px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #28a745;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .addproject form button:hover {
+    background: #218838;
+    transform: translateY(-3px);
+  }
+  
+  .success {
+    color: #28a745;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: #dc3545;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .addproject {
+      padding: 30px 20px;
+      width: 100%;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .addproject h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
